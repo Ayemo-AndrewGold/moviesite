@@ -51,6 +51,7 @@ input {
     padding:6px 9px ;
 }
 
+
 .thumbnail {
     height: 350px;
     width: 300px;
@@ -68,4 +69,74 @@ input {
     padding: 15px;
     text-align: center;
     background-color: #151f30;
+}
+
+
+/*   Media Query */
+
+
+@media screen and (max-width: 768px) {
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .topnav a {
+        float: none;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .topnav .search-container {
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .column {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topnav {
+        padding: 10px;
+    }
+
+    .topnav a {
+        font-size: 1rem;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .column {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .card {
+        padding: 10px;
+    }
 }
